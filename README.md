@@ -47,4 +47,4 @@ EOF
 * sudo systemctl start gateway
 
 5. Read Logs
-journalctl -u gateway.service -f -o cat
+* journalctl -u gateway.service -f -o cat
