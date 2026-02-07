@@ -1,13 +1,14 @@
 Automated "Wake-on-LAN" for Minecraft servers hosted on Google Cloud Platform (GCP). This script acts as a lightweight proxy that monitors player activity, manages DNS records via Cloudflare, and powers VMs up or down. 
 
 
-1. Prerequisites
-Ensure you have the following installed on your Gateway machine (the one that stays 24/7):
-Usually a free-tier micro instance
+Prerequisites
 
--Python 3.8+
--GCP Service Account Key (with Compute Instance Admin permissions)
--Cloudflare API Token (with DNS Edit permissions)
+Ensure the following are ready on your **Gateway machine** (ideally an `e2-micro` Free Tier instance):
+
+* **Python 3.8+**
+* **GCP Service Account:** A JSON key with `Compute Instance Admin` permissions.
+* **Cloudflare API Token:** A token with `Zone.DNS` edit permissions.
+* **Static IP:** The Gateway instance should have a static external IP.
 
 2. Clone & Install Dependencies
 git clone https://github.com/KaruleanDEV/mc-googlecloudautomation.git
