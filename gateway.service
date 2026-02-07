@@ -1,0 +1,23 @@
+#If running as systemd service
+
+[Unit]
+Description=Gateway
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/path/to/your/folder
+ExecStart=/usr/bin/python3 /path/to/your/main.py
+Restart=always
+RestartSec=5
+
+Environment=PYTHONUNBUFFERED=1
+Environment=TERM=xterm-256color
+Environment=PYTHONIOENCODING=utf-8
+
+StandardOutput=inherit
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
