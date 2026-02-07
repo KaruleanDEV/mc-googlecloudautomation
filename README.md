@@ -9,6 +9,7 @@ Ensure the following are ready on your **Gateway machine** (ideally an `e2-micro
 * **GCP Service Account:** A JSON key with `Compute Instance Admin` permissions.
 * **Cloudflare API Token:** A token with `Zone.DNS` edit permissions.
 * **Static IP:** The Gateway instance should have a static external IP.
+* **A Compute instance /w a Minecraft Server**
 
 2. Clone & Install Dependencies
 * git clone https://github.com/KaruleanDEV/mc-googlecloudautomation.git
@@ -21,7 +22,7 @@ Ensure the following are ready on your **Gateway machine** (ideally an `e2-micro
 ```bash
 cat <<EOF | sudo tee /etc/systemd/system/gateway.service
 [Unit]
-Description=Gateway Minecraft Orchestrator
+Description=Gateway
 After=network.target
 
 [Service]
