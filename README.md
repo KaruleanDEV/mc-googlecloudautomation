@@ -42,9 +42,9 @@ WantedBy=multi-user.target
 EOF
 ```
 
-sudo systemctl daemon-reload
-sudo systemctl enable gateway
-sudo systemctl start gateway
+* sudo systemctl daemon-reload
+* sudo systemctl enable gateway
+* sudo systemctl start gateway
 
 5. Read Logs
 journalctl -u gateway.service -f -o cat
