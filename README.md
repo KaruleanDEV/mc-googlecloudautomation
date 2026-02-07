@@ -11,9 +11,9 @@ Ensure the following are ready on your **Gateway machine** (ideally an `e2-micro
 * **Static IP:** The Gateway instance should have a static external IP.
 
 2. Clone & Install Dependencies
-git clone https://github.com/KaruleanDEV/mc-googlecloudautomation.git
-cd mc-gateway-orchestrator
-pip install python-dotenv google-cloud-compute requests
+* git clone https://github.com/KaruleanDEV/mc-googlecloudautomation.git
+* cd mc-gateway-orchestrator
+* pip install python-dotenv google-cloud-compute requests
 
 3. Create a .env file in the root directory (follow example)
 
