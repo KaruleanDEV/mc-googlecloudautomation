@@ -1,2 +1,2 @@
 # mc-googlecloudautomation
-Listen for minecraft connection and run gcp
+Listen for connection and run gcp
